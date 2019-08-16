@@ -53,9 +53,9 @@ def predict(audio_path):
 
 # This needs to be commented while accuracy testing because has coupling to that portion
 
-# base_path = "dataset/predict/"
-# file_name = "1.wav"
+base_path = "dataset/predict/"
+file_name = "1.wav"
 
 
-# speaker_predicted =  predict(base_path+file_name)
-# print("Speaker predicted: "+ speaker_predicted)
+speaker_predicted =  predict(base_path+file_name)
+print("Speaker predicted: "+ speaker_predicted)
