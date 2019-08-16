@@ -1,0 +1,8 @@
+MFCC theory:
+http://www.practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/
+
+Gausaian Mixture Model:
+https://towardsdatascience.com/gaussian-mixture-modelling-gmm-833c88587c7f
+
+Covarience type in mixture model. Below link helps in parameter evaluation and hyper-parameter tuning.
+https://stats.stackexchange.com/questions/326671/different-covariance-types-for-gaussian-mixture-models

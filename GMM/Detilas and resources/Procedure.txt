@@ -1,0 +1,53 @@
+The basic procedure to be followed:
+
+1. Dataset pre-processing to be done in audacity.
+
+   Basically need to prepare the dataset as follows: "For every speaker"
+   a. Dataset with noise
+   b. Dataset without considering the noise
+
+   Noise can be added from the audacity itself or by adding noise while recording.
+
+Caution: Speaker's audio must be verified with that of his/her model only.
+
+2. How to store the speaker's training files:
+    Folder(with speaker's name) wise storing of the speaker's audio files with his/her name.
+
+Note: .wav file is only considered while building the model
+
+
+Any problems to be described here:
+
+Noise Reduction:
+___________________________________________________________________________________
+Library:  https://pypi.org/project/noisereduce/
+Stack Overflow Link: https://dsp.stackexchange.com/questions/55768/remove-background-noise-from-audio-file-python-or-matlab
+___________________________________________________________________________________
+
+
+3. Training procedure:
+    For preparing the model one must pass the speaker's name folder in the
+    command line argument.
+
+
+For the demo in the defense(considering filtering and unfiltered datasets).
+Until the model building is not finished do not concentrate on that.
+
+
+4. Prediction Procedure:
+_______________________________________________________________
+For the prediction, path to the audio file to be predicted
+must be passed whatever the name is of the file.
+
+No need to think of the filename.
+_______________________________________________________________
+
+5. Accuracy Procedure:
+__________________________________________________________________________________________________________
+a. While for predicting the audio file must consist of following columns:
+   audio_path, actual_label, predicted_label
+
+b. For creating the confusion matrix pandas method can be used.
+   Documentation at: https://pandas-ml.readthedocs.io/en/latest/conf_mat.html
+__________________________________________________________________________________________________________
+
