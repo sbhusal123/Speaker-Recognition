@@ -1,5 +1,5 @@
 # Speaker Recognition 
-This is the extension of the work done by Atul-Anand-Jha in the implementation of MFCC(Mel's Frequency Cepestral Coefficient) and GMM(Gausian Mixture Model) which can be accessed from the following link and will be merged into his repository:
+This is the extension of the work done by Atul-Anand-Jha in the implementation of MFCC(Mel's Frequency Cepestral Coefficient) and GMM(Gausian Mixture Model) which can be accessed from the following link and in future will be merged into his repository:
 #### [Browse Repo](https://github.com/Atul-Anand-Jha/Speaker-Identification-Python) 
 
 ## 1. Algorithmic Details:
