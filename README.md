@@ -61,8 +61,6 @@ For the accuracy testing precision, recall and f-score of each speaker's model w
 
 ![Accuracy Thus Measured](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/recall_fscore_precision.png?raw=true)
 
-### Copyright Protected. All rights reserved by: suryabhusal11@gmail.com
-
 
 
 
