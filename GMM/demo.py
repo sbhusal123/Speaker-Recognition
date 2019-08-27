@@ -69,7 +69,7 @@ def recordSounnd(filename):
 
 def playSound(filename):
     '''
-    playing sound while recording calling or initializing the application
+     playing sound while recording calling or initializing the application
 
     @param:
     filename = path + name of file to be played

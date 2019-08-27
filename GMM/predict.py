@@ -9,13 +9,11 @@ from scipy.io.wavfile import read
 import time
 from ExtractFeature import ExtractFeature
 
-def predict(audio_path):
+def testPredict(audio_path):
     '''
-    @:param:
-    audio_path : Path to the audio which needs to be predicted
+    @:param audio_path : Path to the audio which needs to be predicted
 
-    return_type: String
-                Returns the speaker thus detected by comparing to the model
+    @:return: Returns the speaker thus detected by comparing to the model
     '''
 
     modelpath = "speakers_model/"
@@ -51,11 +49,11 @@ def predict(audio_path):
 
 
 
-# This needs to be commented while accuracy testing because has coupling to that portion
-
-# base_path = "dataset/predict/"
-# file_name = "1.wav"
-
-
-# speaker_predicted =  predict(base_path+file_name)
-# print("Speaker predicted: "+ speaker_predicted)
+def predict(file_name):
+    '''
+    @param file_name : name of the file inside the dataset/predicted to be predicted
+    @return: name of the speaker predicted
+    '''
+    base_path = "dataset/predict/"
+    speaker_predicted = predict(base_path + file_name)
+    return speaker_predicted
