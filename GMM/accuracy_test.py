@@ -1,9 +1,8 @@
 from GetFiles import GetFiles
 import predict as pred
 import pandas as pd
-
+from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
-from sklearn.metrics import precision_recall_fscore_support
 import matplotlib.pyplot as plt
 
 
@@ -35,13 +34,13 @@ def getActualPredictedList():
     return actual_predicted
 
 
-def showAccuracyPlot():
+def showAccuracyPlotAndMeasure():
     actual_pred = getActualPredictedList()
 
     actual = actual_pred["actual"].tolist()
     predicted = actual_pred["predicted"].tolist()
     labels  = actual_pred["actual"].unique().tolist()
-    cm = confusion_matrix(actual, predicted, labels) #calculating the confusion matrix
+    cm = confusion_matrix(actual, predicted, labels) #confusion matrix in matrix form
     fig = plt.figure()
     ax = fig.add_subplot(111)
     cax = ax.matshow(cm)
@@ -52,18 +51,10 @@ def showAccuracyPlot():
     plt.xlabel('Predicted')
     plt.ylabel('True')
     plt.show()
-
     display_numeric_accuracy(actual, predicted,labels) # displays the precision recall and fscore
 
 def display_numeric_accuracy(actual,predicted,labels):
-    precision, recall, fscore, support =  precision_recall_fscore_support(actual, predicted)
-    print("------------- Numeric Accuracy Measure for corresponding speakers-----------------")
-    print('Speakers: {}'.format(labels))
-    print('precision: {}'.format(precision))
-    print('recall: {}'.format(recall))
-    print('fscore: {}'.format(fscore))
-    print('support: {}'.format(support))
-    print("---------------------------------------------------------------------------------")
+    print(classification_report(actual, predicted, target_names=labels))
 
 
-showAccuracyPlot()
+showAccuracyPlotAndMeasure()
