@@ -22,7 +22,8 @@ def getActualPredictedList():
         actual = row["actual"]
         data_frame_row.append([actual, predicted])
 
-    actual_predicted = pd.DataFrame(data_frame_row,columns = ['actual','predicted'])
+    # alphabetic sorting by column 'actual' without affecting the predicted column
+    actual_predicted = pd.DataFrame(data_frame_row,columns = ['actual','predicted']).sort_values(by='actual')
 
     return actual_predicted
 
@@ -32,7 +33,7 @@ def showAccuracyPlotAndMeasure():
 
     actual = actual_pred["actual"].tolist()
     predicted = actual_pred["predicted"].tolist()
-    labels  = actual_pred["actual"].unique().tolist()
+    labels  = sorted(actual_pred["actual"].unique().tolist()) # alphabetic sorting
     cm = confusion_matrix(actual, predicted, labels) #confusion matrix in matrix form
 
     fig = plt.figure()
@@ -53,6 +54,7 @@ def display_numeric_accuracy(actual,predicted,labels):
     @param list predicted : predicted label by the GMM classifier
     @param list labels : name of the distinct speaker
     '''
+    print("\n")
     print(classification_report(actual, predicted, target_names=labels))
 
 
