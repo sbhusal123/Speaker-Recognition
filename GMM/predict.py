@@ -49,11 +49,10 @@ def testPredict(audio_path):
 
 
 
-def predict(file_name):
+def predict(path):
     '''
     @param file_name : name of the file inside the dataset/predicted to be predicted
     @return: name of the speaker predicted
     '''
-    base_path = "dataset/predict/"
-    speaker_predicted = predict(base_path + file_name)
+    speaker_predicted = testPredict(path)
     return speaker_predicted

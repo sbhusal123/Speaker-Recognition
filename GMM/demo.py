@@ -84,10 +84,10 @@ def rundemo():
 
     print("Start speaking")
     recordSounnd("1.wav")
-    for i in range(2,4):
-        print(i)
-        playSound("demo_audio/next.wav")
-        recordSounnd(str(i)+".wav")
+    # for i in range(2,4):
+    #     print(i)
+    #     playSound("demo_audio/next.wav")
+    #     recordSounnd(str(i)+".wav")
 
 
 def appendToDb(class_id):
@@ -104,7 +104,11 @@ def appendToDb(class_id):
         predict = pd.predict(paths)
         student_attended.append(predict)
 
-    print(student_attended)
+    print("\n List of students who attended classes:")
+    print("__________________________________")
+    for std in student_attended:
+        print(std)
+    print("__________________________________")
 
     insertIntoDB(student_attended, class_id)
 
@@ -118,7 +122,7 @@ Demo setup:
 3. Then run append to DB using appendToDb(class_id) 
 '''
 
-rundemo()
+# rundemo()
 
-class_id = 8
+class_id = 9
 appendToDb(class_id)
