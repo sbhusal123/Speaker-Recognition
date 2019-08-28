@@ -1,5 +1,5 @@
 # Speaker Recognition 
-This is the extension of the work done by Atul-Anand-Jha in the implementation of MFCC(Mel's Frequency Cepestral Coefficient) and GMM(Gausian Mixture Model) which can be accessed from the following link and in future will be merged into his repository:
+This is the extension of the work done by Atul-Anand-Jha in the implementation of MFCC(Mel's Frequency Cepestral Coefficient) and GMM(Gausian Mixture Model) which can be accessed from the following link:
 #### [Browse Repo](https://github.com/Atul-Anand-Jha/Speaker-Identification-Python) 
 
 ## 1. Algorithmic Details:
@@ -57,9 +57,9 @@ For the accuracy testing precision, recall and f-score of each speaker's model w
 ![Accuracy Thus Measured](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/With%20data%20free%20of%20errors/accuracy_statistical.png?raw=true)
 
 ## b. In case of noisy data:
-![Confusion Matrix Plot](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/confusion_matrix_with_error.png?raw=true)
+![Confusion Matrix Plot](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/confusion_plot.png?raw=true)
 
-![Accuracy Thus Measured](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/accuracy_measured.png?raw=true)
+![Accuracy Thus Measured](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/numeric_accuracy%20measure.png?raw=true)
 
 
 
