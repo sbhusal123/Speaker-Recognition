@@ -57,9 +57,9 @@ For the accuracy testing precision, recall and f-score of each speaker's model w
 ![Accuracy Thus Measured](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/With%20data%20free%20of%20errors/accuracy_statistical.png?raw=true)
 
 ## b. In case of noisy data:
-![Confusion Matrix Plot](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/confusion_matrix_with_error.png?raw=true)
+![Confusion Matrix Plot](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/confusion_plot.png?raw=true)
 
-![Accuracy Thus Measured](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/accuracy_measured.png?raw=true)
+![Accuracy Thus Measured](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/blob/master/Accuracy%20Measures%20And%20Plot/Result%20with%20noisy%20data/numeric_accuracy%20measure.png?raw=true)
 
 
 
