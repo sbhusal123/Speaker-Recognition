@@ -7,6 +7,7 @@ import pickle
 import numpy as np
 from scipy.io.wavfile import read
 import time
+import sys
 from ExtractFeature import ExtractFeature
 
 def testPredict(audio_path):
@@ -49,10 +50,18 @@ def testPredict(audio_path):
 
 
 
-def predict(path):
+def predict(file_name):
     '''
     @param file_name : name of the file inside the dataset/predicted to be predicted
     @return: name of the speaker predicted
     '''
-    speaker_predicted = testPredict(path)
+    speaker_predicted = testPredict(file_name)
     return speaker_predicted
+
+if __name__ == "__main__":
+    predict_dir_path = 'dataset/predict/'
+    file_name = sys.argv[-1]
+    predicted =  predict(predict_dir_path+file_name)
+    print(predicted)
+
+
