@@ -38,7 +38,7 @@ The GMM model of each speaker is dumped at the [Speaker's Model folder](https://
 
 # b. Predicting 
 For prediting simply record your sound and keep it inside the predict folder present inside the dataset folder [predict folder](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/tree/master/GMM/dataset/predict). Then use the following command to predict the file
-> python predict.py <filename>
+> python predict.py "filename.mp3"
 
 # 3. Accuracy 
 For accuracy testing, one needs to provide the each speaker's audio file in the [test](https://github.com/sbhusal123/Speaker-Recognition-Digital-Attendance/tree/master/GMM/dataset/test) folder. Those audio files of speaker must be provided each indivudual's speaker's name.
